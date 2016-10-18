@@ -1,0 +1,62 @@
+{
+  "name": "${Name}",
+  "include": [
+    {
+      "path": "$${QOOXDOO_PATH}/tool/data/config/application.json"
+    }
+  ],
+  "export": [
+    "api",
+    "api-data",
+    "build",
+    "clean",
+    "distclean",
+    "dependencies",
+    "fix",
+    "info",
+    "lint",
+    "migration",
+    "pretty",
+    "profiling",
+    "source",
+    "source-all",
+    "source-hybrid",
+    "source-server",
+    "source-server-reload",
+    "source-httpd-config",
+    "test",
+    "test-source",
+    "translation",
+    "validate-config",
+    "validate-manifest",
+    "watch"
+  ],
+  "default-job": "source-hybrid",
+  "let": {
+    "ROOT": ".",
+    "APPLICATION": "${Namespace}",
+    "QOOXDOO_PATH": "${REL_QOOXDOO_PATH}",
+    "POLYMITA_PATH": "${Cache}",
+    "QXTHEME": "${Namespace}.theme.Theme",
+    "BUILD_PATH": "$${ROOT}/../$${APPLICATION}-build",
+    "CACHE": "./cache/qx${QOOXDOO_VERSION}",
+    "API_EXCLUDE": [
+      "qx.test.*",
+      "$${APPLICATION}.theme.*",
+      "$${APPLICATION}.test.*"
+    ],
+    "LOCALES": [
+      "es"
+    ]
+  },
+  "jobs": {
+    "libraries": {
+      "library": [
+        {
+          "manifest": "$${POLYMITA_PATH}/node_modules/polymita-gui/Manifest.json"
+        }
+      ]
+    }
+  }
+}
+

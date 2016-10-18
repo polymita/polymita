@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "${Name}",
+    "summary": "Custom Application",
+    "description": "This is a skeleton for a custom application with qooxdoo and polymita-gui.",
+    "homepage": "https://github.com/polymita/${Name}-gui/issues",
+    "license": "LGPL/EPL",
+    "authors": [
+      {
+        "name": "Yoandry Pacheco Aguila (yoandrypa)",
+        "email": "yoandrypa@gmail.com"
+      }
+    ],
+    "version": "trunk",
+    "qooxdoo-versions": [
+      "${QOOXDOO_VERSION}"
+    ]
+  },
+  "provides": {
+    "namespace": "${Namespace}",
+    "encoding": "utf-8",
+    "class": "source/class",
+    "resource": "source/resource",
+    "translation": "source/translation",
+    "type": "application"
+  }
+}
+

@@ -1,0 +1,16 @@
+<h1>EJS TEMPLATE ENGINE</h1>
+<hr/>
+<h2><%= name %></h2>
+<ul>
+    <li>Session ID: <%= sessionId %></li>
+    <li>Requested: <%= requested %></li>
+    <li>
+        <% items.forEach(function(i){ %>
+        <%= func1(i.a) %>
+        <% }) %>
+    </li>
+    <li><%= func2(description) %></li>
+</ul>
+
+<%= renderPartial('d1_a.html.ejs', { items: items }) %>
+<%= renderPartial('d1_b.html.jade', { items: items }) %>
