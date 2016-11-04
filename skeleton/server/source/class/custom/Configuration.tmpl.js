@@ -11,16 +11,17 @@ qx.Class.define('${Namespace}.Configuration', {
 
         // override
         init: function () {
-            var resourceManager = qx.util.ResourceManager.getInstance(),
-                databasePath = resourceManager.toUri('data/app.db'),
-
-                jdbcSettings = { driver: 'org.sqlite.JDBC', connectString: 'jdbc:sqlite:' + databasePath },
+            var path = guaraiba.path,
+                databasePath = path.join(guaraiba.appDataPath, 'app.db'),
 
                 appKnexSetting = {
                     client: 'sqlite3',
                     connection: databasePath,
                     useNullAsDefault: true,
-                    debug: true
+                    debug: true,
+                    migrations: {
+                        tableName: 'default_migrations'
+                    },
                 },
 
                 polymitaKnexSetting = {
@@ -28,7 +29,9 @@ qx.Class.define('${Namespace}.Configuration', {
                     connection: databasePath,
                     useNullAsDefault: true,
                     debug: true
-                }
+                },
+
+                jdbcSettings = {driver: 'org.sqlite.JDBC', connectString: 'jdbc:sqlite:' + databasePath};
 
             // Register database schemas.
             this.registerDBSchema(new polymita.schemas.Default(polymitaKnexSetting, jdbcSettings));
