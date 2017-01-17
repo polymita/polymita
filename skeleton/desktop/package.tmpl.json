@@ -25,7 +25,7 @@
     }
   ],
   "devDependencies": {
-    "polymita-gui": "/storage-1/work/desarrollo/datec/proyectos/PATDSI/desarrollo/codigo/polymita-gui",
+    "polymita-gui": "1.0.0",
     "qooxdoo-sdk": "^5.0.1"
   }
 }
