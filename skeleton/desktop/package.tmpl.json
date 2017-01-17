@@ -23,5 +23,9 @@
       "type": "EPL-1.0",
       "url": "http://spdx.org/licenses/EPL-1.0.html#licenseText"
     }
-  ]
+  ],
+  "devDependencies": {
+    "polymita-gui": "/storage-1/work/desarrollo/datec/proyectos/PATDSI/desarrollo/codigo/polymita-gui",
+    "qooxdoo-sdk": "^5.0.1"
+  }
 }

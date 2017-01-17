@@ -2,9 +2,9 @@
   "info": {
     "name": "${Name}",
     "summary": "Custom Application",
-    "description": "This is a skeleton for a custom application with qooxdoo.",
-    "homepage": "http://some.homepage.url/",
-    "license": "SomeLicense",
+    "description": "This is a skeleton for a custom application with qooxdoo and polymita-server.",
+    "homepage": "https://github.com/polymita/${Name}-server/issues",
+    "license": "LGPL/EPL",
     "authors": [
       {
         "name": "First Author (uid)",

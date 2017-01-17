@@ -21,7 +21,7 @@ qx.Class.define('${Namespace}.Configuration', {
                     debug: true,
                     migrations: {
                         tableName: 'default_migrations'
-                    },
+                    }
                 },
 
                 polymitaKnexSetting = {

@@ -35,8 +35,7 @@
   "let": {
     "ROOT": ".",
     "APPLICATION": "${Namespace}",
-    "QOOXDOO_PATH": "${REL_QOOXDOO_PATH}",
-    "POLYMITA_PATH": "${Cache}",
+    "QOOXDOO_PATH": "./node_modules/qooxdoo-sdk",
     "QXTHEME": "${Namespace}.theme.Theme",
     "BUILD_PATH": "$${ROOT}/../$${APPLICATION}-build",
     "CACHE": "./cache/qx${QOOXDOO_VERSION}",
@@ -53,7 +52,7 @@
     "libraries": {
       "library": [
         {
-          "manifest": "$${POLYMITA_PATH}/node_modules/polymita-gui/Manifest.json"
+          "manifest": "./node_modules/polymita-gui/Manifest.json"
         }
       ]
     }
