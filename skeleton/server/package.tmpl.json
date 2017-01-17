@@ -39,6 +39,7 @@
     "handlebars": "^4.0.5",
     "inflection": "^1.10.0",
     "jake": "^8.0.15",
+    "java": "^0.8.0",
     "js-beautify": "^1.6.3",
     "knex": "^0.11.5",
     "method-override": "^2.3.6",
@@ -53,6 +54,7 @@
     "request-ip": "^1.2.2",
     "serve-favicon": "^2.3.0",
     "serve-static": "^1.10.3",
+    "sqlite3": "^3.1.8",
     "strong-cluster-connect-store": "^1.0.3",
     "temporary": "0.0.8",
     "underscore": "^1.8.3",
@@ -62,10 +64,10 @@
     "uuid": "^3.0.1"
   },
   "devDependencies": {
-    "polymita-server": "/storage-1/work/desarrollo/datec/proyectos/PATDSI/desarrollo/codigo/polymita-server",
+    "polymita-server": "polymita-server",
     "prettyjson": "^1.1.3",
     "qooxdoo-sdk": "^5.0.1",
-    "guaraiba-sdk": "/storage-1/work/desarrollo/guaraiba-sdk",
+    "guaraiba-sdk": "guaraiba-sdk",
     "replace": "^0.3.0",
     "sqlite3": "^3.1.4",
     "walk": "^2.3.9"

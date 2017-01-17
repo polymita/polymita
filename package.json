@@ -34,8 +34,5 @@
     "jake": "^8.0.15",
     "promptly": "^1.1.0",
     "qooxdoo-sdk": "^5.0.1"
-  },
-  "publishConfig": {
-    "registry": "http://127.0.0.1:8081/repository/npm-hosted/"
   }
 }
