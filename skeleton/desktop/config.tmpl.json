@@ -45,7 +45,7 @@
       "$${APPLICATION}.test.*"
     ],
     "LOCALES": [
-      "es"
+      "en","es"
     ]
   },
   "jobs": {

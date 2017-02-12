@@ -43,7 +43,7 @@
     "BUILD_PATH": "$${ROOT}/../$${APPLICATION}-build",
     "CACHE": "./cache/qx${QOOXDOO_VERSION}",
     "LOCALES": [
-      "es"
+      "en","es"
     ]
   },
   "config-warnings": {
