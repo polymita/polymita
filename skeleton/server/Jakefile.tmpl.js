@@ -5,6 +5,7 @@ var colors = require('colors'),
 
         var resource = qx.util.ResourceManager.getInstance();
         require(resource.toUri('guaraiba/tasks/Jakefile.js'));
+        require(resource.toUri('polymita/tasks/Jakefile.js'));
     },
     needBuid = function(err){
         if (err) {
